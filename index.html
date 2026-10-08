@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest?v=5">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css?v=4">
+  <title>Lexy’s sound game</title>
+</head>
+<body>
+<main class="game">
+  <header class="top">
+    <div class="brand"><strong>Lexy</strong><span>sound game</span></div>
+    <span id="counter" class="counter">01 / 10</span>
+  </header>
+  <div id="progress" class="progress" aria-label="Round progress"></div>
+
+  <section class="lexy-area" aria-label="Lexy">
+    <h1>Listen</h1>
+    <img class="lexy" src="assets/lexy.png" alt="Lexy the chameleon">
+  </section>
+
+  <section class="play-area">
+    <p class="sr-only">Do you hear the same sound?</p>
+    <figure class="item-figure"><img id="item" alt=""></figure>
+    <button id="replay" class="replay" type="button" aria-label="Listen again">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 14h7l8-7v22l-8-7H3z" fill="currentColor"/><path d="M21 12c4 2 4 10 0 12M25 8c8 5 8 15 0 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+    </button>
+    <div id="response" class="response" aria-live="polite"></div>
+  </section>
+
+  <section class="answer-area" aria-label="Your answer">
+    <div class="answers">
+      <button id="tick" class="answer tick" type="button" aria-label="Tick, same sound"><span aria-hidden="true">✓</span></button>
+      <button id="cross" class="answer cross" type="button" aria-label="Cross, different sounds"><span aria-hidden="true">✗</span></button>
+    </div>
+    <button id="next" class="next hidden" type="button" aria-label="Next sound"><span aria-hidden="true">→</span></button>
+  </section>
+</main>
+
+<div id="welcome" class="overlay">
+  <div class="welcome-card">
+    <img src="assets/lexy.png" alt="" aria-hidden="true">
+    <h2>Lexy’s sound game</h2>
+    <button id="start" class="primary" type="button" aria-label="Start game"><span aria-hidden="true">▶</span></button>
+  </div>
+</div>
+<audio id="voice" preload="auto"></audio>
+<script src="game.js?v=4" defer></script>
+</body>
+</html>

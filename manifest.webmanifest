@@ -1,0 +1,1 @@
+{"name":"Lexy’s sound game","short_name":"Lexy","description":"Listen and choose whether two words begin with the same sound.","start_url":"./?app=1","scope":"./","display":"standalone","background_color":"#ffffff","theme_color":"#ffffff","icons":[{"src":"assets/icon.png","sizes":"192x192","type":"image/png"},{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"}]}
