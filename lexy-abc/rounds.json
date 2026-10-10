@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "letter": "A",
+    "word": "apple",
+    "correct": true,
+    "audio": "audio/01_apple.mp3",
+    "image": "assets/items/apple.webp"
+  },
+  {
+    "id": 2,
+    "letter": "C",
+    "word": "boat",
+    "correct": false,
+    "audio": "audio/02_boat.mp3",
+    "image": "assets/items/boat.webp"
+  },
+  {
+    "id": 3,
+    "letter": "B",
+    "word": "bear",
+    "correct": true,
+    "audio": "audio/03_bear.mp3",
+    "image": "assets/items/bear.webp"
+  },
+  {
+    "id": 4,
+    "letter": "A",
+    "word": "bike",
+    "correct": false,
+    "audio": "audio/04_bike.mp3",
+    "image": "assets/items/bike.webp"
+  },
+  {
+    "id": 5,
+    "letter": "C",
+    "word": "cat",
+    "correct": true,
+    "audio": "audio/05_cat.mp3",
+    "image": "assets/items/cat.webp"
+  },
+  {
+    "id": 6,
+    "letter": "B",
+    "word": "blue",
+    "correct": true,
+    "audio": "audio/06_blue.mp3",
+    "image": "assets/items/blue.svg"
+  },
+  {
+    "id": 7,
+    "letter": "A",
+    "word": "ant",
+    "correct": true,
+    "audio": "audio/07_ant.mp3",
+    "image": "assets/items/ant.webp"
+  },
+  {
+    "id": 8,
+    "letter": "B",
+    "word": "car",
+    "correct": false,
+    "audio": "audio/08_car.mp3",
+    "image": "assets/items/car.webp"
+  },
+  {
+    "id": 9,
+    "letter": "C",
+    "word": "cup",
+    "correct": true,
+    "audio": "audio/09_cup.mp3",
+    "image": "assets/items/cup.webp"
+  },
+  {
+    "id": 10,
+    "letter": "A",
+    "word": "ball",
+    "correct": false,
+    "audio": "audio/10_ball.mp3",
+    "image": "assets/items/ball.webp"
+  },
+  {
+    "id": 11,
+    "letter": "B",
+    "word": "boat",
+    "correct": true,
+    "audio": "audio/11_boat.mp3",
+    "image": "assets/items/boat.webp"
+  },
+  {
+    "id": 12,
+    "letter": "C",
+    "word": "axe",
+    "correct": false,
+    "audio": "audio/12_axe.mp3",
+    "image": "assets/items/axe.webp"
+  },
+  {
+    "id": 13,
+    "letter": "A",
+    "word": "angry",
+    "correct": true,
+    "audio": "audio/13_angry.mp3",
+    "image": "assets/items/angry.webp"
+  },
+  {
+    "id": 14,
+    "letter": "C",
+    "word": "crayon",
+    "correct": true,
+    "audio": "audio/14_crayon.mp3",
+    "image": "assets/items/crayon.webp"
+  },
+  {
+    "id": 15,
+    "letter": "B",
+    "word": "bird",
+    "correct": true,
+    "audio": "audio/15_bird.mp3",
+    "image": "assets/items/bird.webp"
+  },
+  {
+    "id": 16,
+    "letter": "A",
+    "word": "bear",
+    "correct": false,
+    "audio": "audio/16_bear.mp3",
+    "image": "assets/items/bear.webp"
+  },
+  {
+    "id": 17,
+    "letter": "C",
+    "word": "computer",
+    "correct": true,
+    "audio": "audio/17_computer.mp3",
+    "image": "assets/items/computer.webp"
+  },
+  {
+    "id": 18,
+    "letter": "B",
+    "word": "bed",
+    "correct": true,
+    "audio": "audio/18_bed.mp3",
+    "image": "assets/items/bed.webp"
+  },
+  {
+    "id": 19,
+    "letter": "A",
+    "word": "alligator",
+    "correct": true,
+    "audio": "audio/19_alligator.mp3",
+    "image": "assets/items/alligator.webp"
+  },
+  {
+    "id": 20,
+    "letter": "C",
+    "word": "ball",
+    "correct": false,
+    "audio": "audio/20_ball.mp3",
+    "image": "assets/items/ball.webp"
+  },
+  {
+    "id": 21,
+    "letter": "B",
+    "word": "bag",
+    "correct": true,
+    "audio": "audio/21_bag.mp3",
+    "image": "assets/items/bag.webp"
+  },
+  {
+    "id": 22,
+    "letter": "A",
+    "word": "car",
+    "correct": false,
+    "audio": "audio/22_car.mp3",
+    "image": "assets/items/car.webp"
+  },
+  {
+    "id": 23,
+    "letter": "C",
+    "word": "car",
+    "correct": true,
+    "audio": "audio/23_car.mp3",
+    "image": "assets/items/car.webp"
+  },
+  {
+    "id": 24,
+    "letter": "B",
+    "word": "apple",
+    "correct": false,
+    "audio": "audio/24_apple.mp3",
+    "image": "assets/items/apple.webp"
+  },
+  {
+    "id": 25,
+    "letter": "A",
+    "word": "axe",
+    "correct": true,
+    "audio": "audio/25_axe.mp3",
+    "image": "assets/items/axe.webp"
+  },
+  {
+    "id": 26,
+    "letter": "C",
+    "word": "bus",
+    "correct": false,
+    "audio": "audio/26_bus.mp3",
+    "image": "assets/items/bus.webp"
+  },
+  {
+    "id": 27,
+    "letter": "B",
+    "word": "book",
+    "correct": true,
+    "audio": "audio/27_book.mp3",
+    "image": "assets/items/book.webp"
+  },
+  {
+    "id": 28,
+    "letter": "A",
+    "word": "blue",
+    "correct": false,
+    "audio": "audio/28_blue.mp3",
+    "image": "assets/items/blue.svg"
+  },
+  {
+    "id": 29,
+    "letter": "B",
+    "word": "bike",
+    "correct": true,
+    "audio": "audio/29_bike.mp3",
+    "image": "assets/items/bike.webp"
+  },
+  {
+    "id": 30,
+    "letter": "C",
+    "word": "boat",
+    "correct": false,
+    "audio": "audio/30_boat.mp3",
+    "image": "assets/items/boat.webp"
+  }
+]
