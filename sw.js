@@ -1,21 +1,5 @@
-const CACHE='lexy-sound-v5-offline';const FILES=['./','index.html','style.css?v=4','game.js?v=4','manifest.webmanifest?v=5','assets/lexy.png','assets/icon.png','assets/icon-512.png','assets/URWGothic-Book.otf','assets/URWGothic-Demi.otf','audio/intro.mp3','audio/correct.mp3','audio/retry.mp3','assets/items/bike.png','assets/items/cup.png','assets/items/car.png','assets/items/bus.png','assets/items/ball.png','assets/items/crayon.png','assets/items/ant.png','assets/items/alligator.png',...Array.from({length:10},(_,i)=>['pair','explain'].map(t=>`audio/${String(i+1).padStart(2,'0')}_${t}.mp3`)).flat()];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{
-  if(e.request.method!=='GET')return;
-  if(e.request.mode==='navigate'){
-    if(new URL(e.request.url).searchParams.has('app')){
-      e.respondWith(caches.match('./').then(c=>c||fetch(e.request)));
-      return;
-    }
-    e.respondWith(fetch(e.request).then(response=>{
-      if(response.ok){
-        const copy=response.clone();
-        e.waitUntil(caches.open(CACHE).then(cache=>cache.put('./',copy)));
-      }
-      return response;
-    }).catch(()=>caches.match('./').then(c=>c||caches.match('index.html'))));
-    return;
-  }
-  e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request)));
-});
+const CACHE='lexy-abc-30-v1';
+const FILES=["./", "index.html", "style.css", "app.js", "rounds.js", "manifest.webmanifest", "assets/icon.svg", "assets/items/alligator.webp", "assets/items/angry.webp", "assets/items/ant.webp", "assets/items/apple.webp", "assets/items/axe.webp", "assets/items/bag.webp", "assets/items/ball.webp", "assets/items/bear.webp", "assets/items/bed.webp", "assets/items/bike.webp", "assets/items/bird.webp", "assets/items/blue.svg", "assets/items/boat.webp", "assets/items/book.webp", "assets/items/bus.webp", "assets/items/car.webp", "assets/items/cat.webp", "assets/items/computer.webp", "assets/items/crayon.webp", "assets/items/cup.webp", "assets/lexy.png", "audio/01_apple.mp3", "audio/02_boat.mp3", "audio/03_bear.mp3", "audio/04_bike.mp3", "audio/05_cat.mp3", "audio/06_blue.mp3", "audio/07_ant.mp3", "audio/08_car.mp3", "audio/09_cup.mp3", "audio/10_ball.mp3", "audio/11_boat.mp3", "audio/12_axe.mp3", "audio/13_angry.mp3", "audio/14_crayon.mp3", "audio/15_bird.mp3", "audio/16_bear.mp3", "audio/17_computer.mp3", "audio/18_bed.mp3", "audio/19_alligator.mp3", "audio/20_ball.mp3", "audio/21_bag.mp3", "audio/22_car.mp3", "audio/23_car.mp3", "audio/24_apple.mp3", "audio/25_axe.mp3", "audio/26_bus.mp3", "audio/27_book.mp3", "audio/28_blue.mp3", "audio/29_bike.mp3", "audio/30_boat.mp3", "audio/correct.mp3", "audio/ending.mp3", "audio/intro.mp3", "audio/retry.mp3"];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()));});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('lexy-abc-30-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==location.origin)return;e.respondWith(caches.match(e.request).then(hit=>hit||fetch(e.request)));});

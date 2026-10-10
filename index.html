@@ -1,55 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="manifest" href="manifest.webmanifest?v=5">
-  <link rel="icon" href="assets/icon.png">
-  <link rel="stylesheet" href="style.css?v=4">
-  <title>Lexy’s sound game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7850ba">
+<meta name="description" content="Listen with Lexy and match the first sound to Aa, Bb or Cc. An English game by Miss T.">
+<title>Lexy’s ABC Sound Game</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="game">
-  <header class="top">
-    <div class="brand"><strong>Lexy</strong><span>sound game</span></div>
-    <span id="counter" class="counter">01 / 10</span>
-  </header>
-  <div id="progress" class="progress" aria-label="Round progress"></div>
-
-  <section class="lexy-area" aria-label="Lexy">
-    <h1>Listen</h1>
-    <img class="lexy" src="assets/lexy.png" alt="Lexy the chameleon">
+  <header class="top"><span class="brand">Lexy <span class="brand-abc">ABC</span></span><span id="counter" class="counter">0 / 30</span></header>
+  <div class="progress" role="progressbar" aria-label="Completed rounds" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><div id="progressFill"></div></div>
+  <section class="guide">
+    <button id="replay" class="listen" aria-label="Listen again" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z"/><path d="M16 8c3 2 3 6 0 8M19 5c6 4 6 10 0 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Listen</span></button>
+    <img class="lexy" src="assets/lexy.png" alt="Lexy" draggable="false">
   </section>
-
-  <section class="play-area">
-    <p class="sr-only">Do you hear the same sound?</p>
-    <figure class="item-figure"><img id="item" alt=""></figure>
-    <button id="replay" class="replay" type="button" aria-label="Listen again">
-      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 14h7l8-7v22l-8-7H3z" fill="currentColor"/><path d="M21 12c4 2 4 10 0 12M25 8c8 5 8 15 0 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-    </button>
-    <div id="response" class="response" aria-live="polite"></div>
+  <section id="welcome" class="welcome">
+    <h1>Lexy’s ABC<br>Sound Game</h1>
+    <div class="welcome-letters" aria-hidden="true"><span>Aa</span><span>Bb</span><span>Cc</span></div>
+    <button id="start" class="play" aria-label="Start game"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 5l18 11-18 11z"/></svg></button>
   </section>
-
-  <section class="answer-area" aria-label="Your answer">
+  <section id="round" class="round" hidden>
+    <div id="letter" class="letter" aria-label="Letter"></div>
+    <div class="picture-wrap"><img id="picture" class="picture" alt="Picture" draggable="false"></div>
+    <div id="response" class="response" role="status" aria-live="polite"></div>
     <div class="answers">
-      <button id="tick" class="answer tick" type="button" aria-label="Tick, same sound"><span aria-hidden="true">✓</span></button>
-      <button id="cross" class="answer cross" type="button" aria-label="Cross, different sounds"><span aria-hidden="true">✗</span></button>
+      <button id="tick" class="answer" aria-label="Tick: same first sound" disabled><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 34l13 13 29-31"/></svg></button>
+      <button id="cross" class="answer" aria-label="Cross: different first sound" disabled><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 16l32 32M48 16L16 48"/></svg></button>
     </div>
-    <button id="next" class="next hidden" type="button" aria-label="Next sound"><span aria-hidden="true">→</span></button>
+    <button id="next" class="next" aria-label="Next round" hidden>➜</button>
   </section>
+  <section id="finish" class="finish" hidden>
+    <div class="stars" aria-hidden="true">★ ★ ★</div>
+    <h1>Well done!</h1>
+    <div class="finish-count">30 / 30</div>
+    <button id="again" class="play" aria-label="Play again">↻</button>
+  </section>
+  <footer>English Games by Miss T</footer>
 </main>
-
-<div id="welcome" class="overlay">
-  <div class="welcome-card">
-    <img src="assets/lexy.png" alt="" aria-hidden="true">
-    <h2>Lexy’s sound game</h2>
-    <button id="start" class="primary" type="button" aria-label="Start game"><span aria-hidden="true">▶</span></button>
-  </div>
-</div>
-<audio id="voice" preload="auto"></audio>
-<script src="game.js?v=4" defer></script>
-</body>
-</html>
+<audio id="voice" preload="auto" playsinline></audio>
+<script src="rounds.js"></script>
+<script src="app.js"></script>
+</body></html>
