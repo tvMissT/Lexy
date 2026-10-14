@@ -1,0 +1,2 @@
+Игра с двумя словами, 10 заданий. Финал: Лекси, 10 шариков, нажатием шарики лопаются. Запись Well done! You can play again! перенесена из ABC.
+Для GitHub загрузить СОДЕРЖИМОЕ папки restore-two-words-balloons в корень Lexy: папки assets и audio и файлы index.html, game.js, style.css, sw.js, manifest.webmanifest. Папку lexy-abc не менять. ZIP не загружать.
