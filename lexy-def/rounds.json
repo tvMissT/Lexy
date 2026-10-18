@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "letter": "D",
+    "word": "desk",
+    "correct": true,
+    "audio": "audio/desk.mp3",
+    "image": "assets/items/desk.png"
+  },
+  {
+    "id": 2,
+    "letter": "F",
+    "word": "egg",
+    "correct": false,
+    "audio": "audio/egg.mp3",
+    "image": "assets/items/egg.png"
+  },
+  {
+    "id": 3,
+    "letter": "E",
+    "word": "egg",
+    "correct": true,
+    "audio": "audio/egg.mp3",
+    "image": "assets/items/egg.png"
+  },
+  {
+    "id": 4,
+    "letter": "D",
+    "word": "doll",
+    "correct": true,
+    "audio": "audio/doll.mp3",
+    "image": "assets/items/doll.png"
+  },
+  {
+    "id": 5,
+    "letter": "E",
+    "word": "flag",
+    "correct": false,
+    "audio": "audio/flag.mp3",
+    "image": "assets/items/flag.png"
+  },
+  {
+    "id": 6,
+    "letter": "F",
+    "word": "fish",
+    "correct": true,
+    "audio": "audio/fish.mp3",
+    "image": "assets/items/fish.png"
+  },
+  {
+    "id": 7,
+    "letter": "E",
+    "word": "elephant",
+    "correct": true,
+    "audio": "audio/elephant.mp3",
+    "image": "assets/items/elephant.png"
+  },
+  {
+    "id": 8,
+    "letter": "D",
+    "word": "fish",
+    "correct": false,
+    "audio": "audio/fish.mp3",
+    "image": "assets/items/fish.png"
+  },
+  {
+    "id": 9,
+    "letter": "F",
+    "word": "farm",
+    "correct": true,
+    "audio": "audio/farm.mp3",
+    "image": "assets/items/farm.png"
+  },
+  {
+    "id": 10,
+    "letter": "D",
+    "word": "duck",
+    "correct": true,
+    "audio": "audio/duck.mp3",
+    "image": "assets/items/duck.png"
+  },
+  {
+    "id": 11,
+    "letter": "F",
+    "word": "desk",
+    "correct": false,
+    "audio": "audio/desk.mp3",
+    "image": "assets/items/desk.png"
+  },
+  {
+    "id": 12,
+    "letter": "E",
+    "word": "duck",
+    "correct": false,
+    "audio": "audio/duck.mp3",
+    "image": "assets/items/duck.png"
+  },
+  {
+    "id": 13,
+    "letter": "D",
+    "word": "drum",
+    "correct": true,
+    "audio": "audio/drum.mp3",
+    "image": "assets/items/drum.png"
+  },
+  {
+    "id": 14,
+    "letter": "E",
+    "word": "egg",
+    "correct": true,
+    "audio": "audio/egg.mp3",
+    "image": "assets/items/egg.png"
+  },
+  {
+    "id": 15,
+    "letter": "F",
+    "word": "fork",
+    "correct": true,
+    "audio": "audio/fork.mp3",
+    "image": "assets/items/fork.png"
+  },
+  {
+    "id": 16,
+    "letter": "E",
+    "word": "fork",
+    "correct": false,
+    "audio": "audio/fork.mp3",
+    "image": "assets/items/fork.png"
+  },
+  {
+    "id": 17,
+    "letter": "D",
+    "word": "egg",
+    "correct": false,
+    "audio": "audio/egg.mp3",
+    "image": "assets/items/egg.png"
+  },
+  {
+    "id": 18,
+    "letter": "F",
+    "word": "fan",
+    "correct": true,
+    "audio": "audio/fan.mp3",
+    "image": "assets/items/fan.png"
+  },
+  {
+    "id": 19,
+    "letter": "D",
+    "word": "elephant",
+    "correct": false,
+    "audio": "audio/elephant.mp3",
+    "image": "assets/items/elephant.png"
+  },
+  {
+    "id": 20,
+    "letter": "F",
+    "word": "drum",
+    "correct": false,
+    "audio": "audio/drum.mp3",
+    "image": "assets/items/drum.png"
+  },
+  {
+    "id": 21,
+    "letter": "E",
+    "word": "elephant",
+    "correct": true,
+    "audio": "audio/elephant.mp3",
+    "image": "assets/items/elephant.png"
+  },
+  {
+    "id": 22,
+    "letter": "F",
+    "word": "floor",
+    "correct": true,
+    "audio": "audio/floor.mp3",
+    "image": "assets/items/floor.png"
+  },
+  {
+    "id": 23,
+    "letter": "E",
+    "word": "farm",
+    "correct": false,
+    "audio": "audio/farm.mp3",
+    "image": "assets/items/farm.png"
+  },
+  {
+    "id": 24,
+    "letter": "D",
+    "word": "duck",
+    "correct": true,
+    "audio": "audio/duck.mp3",
+    "image": "assets/items/duck.png"
+  },
+  {
+    "id": 25,
+    "letter": "E",
+    "word": "doll",
+    "correct": false,
+    "audio": "audio/doll.mp3",
+    "image": "assets/items/doll.png"
+  },
+  {
+    "id": 26,
+    "letter": "D",
+    "word": "fan",
+    "correct": false,
+    "audio": "audio/fan.mp3",
+    "image": "assets/items/fan.png"
+  },
+  {
+    "id": 27,
+    "letter": "F",
+    "word": "duck",
+    "correct": false,
+    "audio": "audio/duck.mp3",
+    "image": "assets/items/duck.png"
+  },
+  {
+    "id": 28,
+    "letter": "E",
+    "word": "floor",
+    "correct": false,
+    "audio": "audio/floor.mp3",
+    "image": "assets/items/floor.png"
+  },
+  {
+    "id": 29,
+    "letter": "D",
+    "word": "flag",
+    "correct": false,
+    "audio": "audio/flag.mp3",
+    "image": "assets/items/flag.png"
+  },
+  {
+    "id": 30,
+    "letter": "F",
+    "word": "flag",
+    "correct": true,
+    "audio": "audio/flag.mp3",
+    "image": "assets/items/flag.png"
+  }
+]
