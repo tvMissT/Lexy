@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lexy's DEF Trace</title><link rel="stylesheet" href="style.css"></head><body>
+<main><header><strong>Lexy <small>DEF Trace</small></strong><span id="counter"></span></header><div class="bar"><i id="progress" style="width:0%"></i></div>
+<img class="lexy" src="assets/lexy.png" alt="Lexy">
+<section id="welcome"><h1>Trace with Lexy!</h1><div class="pair"><span>Dd</span><span>Ee</span><span>Ff</span></div><button class="primary" id="start">▶ Play</button></section>
+<section id="game" class="hidden"><h2 id="instruction">Trace the letter.</h2><button class="listen hidden" id="listen" aria-label="Listen to the word again">🔊 Listen</button><img id="picture" class="picture hidden" alt="Picture"><p id="status" role="status" aria-live="polite"></p><div id="choices" class="choices hidden"></div>
+<div id="board" class="board hidden"><svg id="canvas" viewBox="0 0 500 400" role="img" aria-label="Letter tracing area"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#8363b7" stroke-width="1.5"/></marker></defs><g id="guides"></g><g id="inks"></g><path id="direction" class="pointer" marker-end="url(#arrow)"/><circle id="dot" class="start-dot" r="12"/></svg></div>
+<button id="reset" class="reset hidden" aria-label="Clear this letter and try tracing again">↺</button></section>
+<section id="finish" class="hidden"><div class="finish-stars">★★★</div><h1>Well done!</h1><p>You can play again!</p><button id="again" class="primary">▶ Play again</button></section>
+<div id="bubbles" aria-label="Pop the soap bubbles"></div><p class="footer">English Games by Miss T</p></main><script src="core.js"></script><script src="app.js"></script></body></html>
